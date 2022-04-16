@@ -9,7 +9,7 @@ while isRunning:
     req = requests.get(url)
 
     if req.status_code == 200:
-        #PokeInfo
+        #PokeInfo to json
         pokeData = req.json()
         # print(pokeData)
         print(f"Name \t {pokeData['name']}")
